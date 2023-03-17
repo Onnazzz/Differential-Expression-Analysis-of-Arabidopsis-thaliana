@@ -1,0 +1,67 @@
+---
+title: "Quality_analysis"
+author: "Aura"
+date: "2023-03-17"
+output: html_document
+---
+**General Statistics**  
+Nuestros datos crudos parecen tener un porcentaje significativo de lecturas duplicadas, alrededor del 46 % del contenido de GC, y la mayoría de las muestras alcanzaron más de 22 millones de secuencias totales.  
+![](raw_general_statistics.png){width=600px}  
+**Sequence Quality Histograms**    
+Según nuestros resultados, el valor medio de calidad en cada posición base en nuestras 12 muestras se posiciona en una llamada de muy buena calidad con todas las muestras por encima de 35 en la puntuación Phred. Pasaron 12/12 muestras.  
+![](raw_per_base_sequence_quality_plot.png){width=1000px}  
+**Per sequence Quality Scores**  
+En la distribución de la puntuación de calidad de todas las secuencias, encontramos que más de 25 millones de lecturas alcanzan 36 en la puntuación Phred. No encontramos ningún subgrupo con valores bajos de calidad, sino que la mayoría de los promedios de las calidades de las lecturas están por encima de 30, lo que nos indica una muy buena calidad en términos de medias por secuencia. Pasaron 12/12 muestras.  
+![](raw_per_sequence_quality_scores_plot.png){width=1000px}  
+**Per Base Sequence Content**  
+Podemos observar que la cantidad relativa está bastante equilibrada para cada base en el genoma secuenciado. Así mismo las diferencias entre las bases A y T y, G y C es en todas las posiciones <10%, por lo que no hay ningún waring.  
+![](raw_per_base_sequence_content.png){width=1000px}  
+**Per Sequence GC Content**  
+Según la distribución, nuestro genoma tiene el 46% del contenido total de GC debido al pico de lo normal. Parece una distribución normal del contenido de GC. 
+![](raw_per_sequence_gc_content_plot.png){width=1000px}  
+**Per Base N Content**  
+En este gráfico pasaron 12/12 muestras porque el porcentaje de N está muy pegado a cero en todo el dominio. Eso significa que cada base llamada tiene suficiente confianza en el secuenciador.  
+![](raw_per_base_n_content_plot.png){width=1000px}  
+**Sequence Length Distribution**  
+Todas las muestras tienen secuencias de una sola longitud (150 pb).  
+  
+**Sequence Duplication Levels**  
+En este caso tenemos un warning porque las secuencias no únicas representan más del 20% de la muestra total, pero esto está en niveles de duplicación de secuencias <1. En el resto del gráfico, el nivel de duplicación mantiene su valor <20 del % of Library.     
+![](raw_sequence_duplication_levels_plot.png){width=1000px}  
+**Adapter Content**  
+No se encontraron muestras con contaminación del adaptador > 0,1 %  
+  
+*Nuestra secuencia de datos sin procesar tiene una muy buena calidad en términos generales. Veamos qué sucede si se recorta la secuencia.*  
+  
+**General Statistics**  
+En este caso obtuvimos otras 12 muestras que no están emparejadas y con muy pocos datos de ellas en términos de M Seqs.
+  
+**Sequence Quality Histograms**  
+Los puntajes medios de calidad aún se encuentran en un nivel muy bueno y aceptable.    
+![](trimmed_per_base_sequence_quality_plot.png){width=1000px}  
+**Per Sequence Quality Scores**  
+No existen subgrupos de datos con bajos niveles de calidad, sino que todos los datos tienen altos niveles de calidad de secuencia media.    
+![](trimmed_per_sequence_quality_scores_plot.png){width=1000px}  
+**Per Base Sequence Content**  
+La proporción aún está equilibrada y no hay diferencias significativas entre A y T y C y G.  
+![](trimmed_per_base_sequence_content.png){width=1000px}   
+**Per Sequence GC Content**  
+El contenido de GC sigue teniendo una distribución normal con su pico en el 46% del contenido de CG.    
+![](trimmed_per_sequence_gc_content_plot.png){width=1000px}  
+**Per Base N Content**  
+No hay anomalías, por lo que cada base llamada tiene suficiente confianza en el secuenciador.  
+![](trimmed_per_base_n_content_plot.png){width=1000px}  
+**Sequence Length Distribution**  
+El gráfico nos muestra algunos warnings, pero tiene un pico de en 21 millones y un valor atípico de 31 millones. Inicialmente vimos que 2 muestras eran más grandes que las otras, y podría ser por eso que nuestra figura no nos muestra un pico bien marcado como esperábamos.    
+![](trimmed_sequence_length_distribution_plot.png){width=1000px}  
+**Sequence Duplication Levels**  
+La figura es muy similar al gráfico antes del trimming, y las muestras no apareadas se representan aquí con niveles muy bajos de duplicación, pero esto también era de esperarse porque tampoco hay una secuencia de tantos millones como las que sí son pareadas.
+![](trimmed_sequence_duplication_levels_plot.png){width=1000px}  
+
+**Overrepresented sequences**  
+12 muestras tenían menos del 1 % de las lecturas compuestas por secuencias sobrerrepresentadas.  
+**Adapter Content**  
+No se encontraron muestras con contaminación del adaptador > 0,1 %.  
+
+
+
