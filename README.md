@@ -1,9 +1,5 @@
-# RNA_secAT
+# RNA_seq of Arabidopsis thaliana
 
-data.html contiene el pipeline seguido para levar a cabo la practica rna-SEC
+Data.html have the followed pipeline to make the practice RNA-seq of Arabidopsis thaliana
 
-data_quiality contiene informacion mas detallada acerca de los datos
-
-la ruta para el royecto en el cluster lavis es:
-
-/mnt/Timina/bioinfoII/rnaseq/BioProject_2023/rawData/Athaliana_Pho/
+Data_quiality have detailed information about the data.
