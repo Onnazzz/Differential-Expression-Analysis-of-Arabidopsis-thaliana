@@ -1,7 +1,7 @@
 # Differential expression analysis between three RNA-Seq results from three wild type of Arabidopsis thaliana plants
 
 Inside the RNAsec_project file, you'll find Project.html, which is the document containing the Differential Expression Analysis of Arabidopsis thaliana.
-Data_quiality have detailed information about the data.
+Data_quiality contain the quality_analysis 4.html that has detailed information about of the data. Also there are the multiqc_report_raw.html, multiqc_report_trimmed.html.
 
 Abstract of the pratice: 
 
