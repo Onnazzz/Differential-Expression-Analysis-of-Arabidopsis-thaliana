@@ -4,7 +4,7 @@ Inside the RNAsec_project file, you'll find Project.html, which is the document 
 
 Data_quiality contain the quality_analysis 4.html that has detailed information about of the data. Also there are the multiqc_report_raw.html, multiqc_report_trimmed.html.
 
-Objective: 
+Objectives: 
 
 -Familiarization with NCBI datasets
 
